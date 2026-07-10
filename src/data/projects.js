@@ -91,7 +91,7 @@ const projects = [
 
     features: ["Animations", "Responsive"],
 
-    github: "#",
+    github: "https://github.com/sanjay-kumar99/MY-Portfolio",
 
     live: "#",
   },
