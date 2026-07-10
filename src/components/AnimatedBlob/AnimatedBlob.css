@@ -1,0 +1,110 @@
+/* ===========================
+        BLOB WRAPPER
+=========================== */
+
+.blob-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===========================
+        COMMON
+=========================== */
+
+.blob {
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  opacity: .35;
+
+}
+
+/* ===========================
+        BLOB 1
+=========================== */
+
+.blob-one {
+
+  width: 420px;
+
+  height: 420px;
+
+  background: #6366f1;
+
+  top: 5%;
+
+  left: -100px;
+
+}
+
+/* ===========================
+        BLOB 2
+=========================== */
+
+.blob-two {
+
+  width: 350px;
+
+  height: 350px;
+
+  background: #8b5cf6;
+
+  right: -120px;
+
+  top: 45%;
+
+}
+
+/* ===========================
+        BLOB 3
+=========================== */
+
+.blob-three {
+
+  width: 280px;
+
+  height: 280px;
+
+  background: #06b6d4;
+
+  bottom: -80px;
+
+  left: 45%;
+
+}
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.blob-one{
+
+width:260px;
+height:260px;
+
+}
+
+.blob-two{
+
+width:220px;
+height:220px;
+
+}
+
+.blob-three{
+
+width:180px;
+height:180px;
+
+}
+
+}

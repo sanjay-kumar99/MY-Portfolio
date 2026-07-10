@@ -1,0 +1,81 @@
+/* ===========================
+      SECTION TITLE
+=========================== */
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-title.left {
+  text-align: left;
+}
+
+.section-subtitle {
+  display: inline-block;
+  color: #8b5cf6;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.section-line {
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4);
+  border-radius: 50px;
+}
+
+.section-title.center .section-line {
+  margin: 0 auto;
+}
+
+.section-title.left .section-line {
+  margin: 0;
+}
+
+/* ===========================
+      Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
+
+  .section-heading {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .section-line {
+    width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 30px;
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+  }
+}

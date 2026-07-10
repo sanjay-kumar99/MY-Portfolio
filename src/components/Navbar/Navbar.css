@@ -1,0 +1,258 @@
+/* ===========================
+        NAVBAR
+=========================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+
+  transform: translateX(-50%);
+
+  width: 100cc;
+  max-width: 1300px;
+
+  z-index: 1000;
+
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+}
+
+/* ===========================
+      NAV CONTAINER
+=========================== */
+
+.nav-container {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+}
+
+/* ===========================
+          LOGO
+=========================== */
+
+.logo-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #6366f1;
+}
+
+/* ===========================
+      DESKTOP MENU
+=========================== */
+
+.desktop-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.desktop-nav a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+.desktop-nav a:hover,
+.desktop-nav .active {
+  color: #6366f1;
+}
+
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #6366f1;
+
+  transition: 0.3s;
+}
+
+.desktop-nav a:hover::after,
+.desktop-nav .active::after {
+  width: 100%;
+}
+
+/* ===========================
+        BUTTON
+=========================== */
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+
+  color: white;
+  text-decoration: none;
+
+  border-radius: 50px;
+
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+
+  transition: 0.35s;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+}
+
+/* ===========================
+      MENU BUTTON
+=========================== */
+
+.menu-btn {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  color: white;
+
+  font-size: 34px;
+
+  cursor: pointer;
+}
+
+/* ===========================
+      MOBILE MENU
+=========================== */
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+
+  padding: 30px;
+
+  background: rgba(17, 24, 39, 0.95);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 0 0 18px 18px;
+}
+
+.mobile-menu a {
+  color: white;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  transition: 0.3s;
+}
+
+.mobile-menu a:hover,
+.mobile-menu .active {
+  color: #6366f1;
+}
+
+/* ===========================
+      TABLET
+=========================== */
+
+@media (max-width: 992px) {
+  .desktop-nav,
+  .desktop-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    width: 95%;
+
+    top: 15px;
+  }
+
+  .nav-container {
+    padding: 0 20px;
+
+    height: 68px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+}
+
+/* ===========================
+      MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 99%;
+  }
+
+  .mobile-menu {
+    padding: 25px;
+  }
+
+  .resume-btn {
+    justify-content: center;
+  }
+}
+
+/* ===========================
+    SMALL MOBILE
+=========================== */
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0 16px;
+
+    height: 64px;
+  
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu-btn {
+    font-size: 30px;
+  }
+
+  .mobile-menu {
+    padding: 22px;
+  }
+
+  .mobile-menu a {
+    font-size: 16px;
+  }
+
+  .resume-btn {
+    width: 90%;
+  }
+}

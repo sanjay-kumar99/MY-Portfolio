@@ -1,0 +1,156 @@
+/* ===============================
+            FOOTER
+================================ */
+
+.footer {
+  padding: 80px 0 40px;
+  background: #080d19;
+  color: #fff;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.footer h4 {
+  color: #8b5cf6;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* ===============================
+        SOCIAL ICONS
+================================ */
+
+.footer-social {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.footer-social a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.35s;
+}
+
+.footer-social a:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+/* ===============================
+            LINE
+================================ */
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 35px 0;
+}
+
+/* ===============================
+        COPYRIGHT
+================================ */
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.heart {
+  color: #ef4444;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ===============================
+        RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 70px 0 30px;
+  }
+
+  .footer h2 {
+    font-size: 34px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+  }
+
+  .footer-social {
+    gap: 16px;
+  }
+
+  .footer-social a {
+    width: 48px;
+    height: 48px;
+
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    width: 92%;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+  }
+
+  .footer h4 {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 15px;
+  }
+}

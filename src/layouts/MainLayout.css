@@ -1,0 +1,9 @@
+.main-container{
+    width:100%;
+    overflow:hidden;
+}
+
+section{
+    width:100%;
+    position:relative;
+}
