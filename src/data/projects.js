@@ -93,7 +93,7 @@ const projects = [
 
     github: "https://github.com/sanjay-kumar99/MY-Portfolio",
 
-    live: "#",
+    live: "https://sanjay-mern.vercel.app/",
   },
 ];
 
